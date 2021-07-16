@@ -39,6 +39,52 @@ ul {
     background: #666; 
 }
 
+/* General */
+
+.content-section {
+    width: 76.5%;
+    margin: 0 auto;
+    padding: 80px 120px;
+}
+
+.section__heading {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 10px;
+}
+
+.section__heading,
+.section__slogan {
+    text-align: center;
+}
+
+.section__slogan {
+    font-size: 15px;
+    margin: 25px 0 10px 0;
+    font-style: italic;
+    line-height: 1.4;
+    color: #777;
+}
+
+.btn {
+    font-size: 14px;
+    line-height: 1.42857143;
+    padding: 10px 20px;
+    color: #f1f1f1;
+    background-color: #333;
+    outline: none;
+    border: 1px solid transparent;
+    transition: all ease .2s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: var(--white-color);
+    border: 1px solid #333;
+}
+
+
 /* header */
 
 .header {
@@ -131,6 +177,8 @@ a.nav-item__logo {
     color: #d5d5d5;
 }
 
+/* Home */
+
 #home {
     padding-top: 50%;
     background: url('../img/slider1.jpg') top center / cover no-repeat;
@@ -157,30 +205,7 @@ a.nav-item__logo {
     margin-top: 25px;
 }
 
-.content-section {
-    width: 76.5%;
-    margin: 0 auto;
-    padding: 80px 120px;
-}
-
-.section__heading {
-    font-size: 30px;
-    font-weight: 500;
-    letter-spacing: 4px;
-}
-
-.section__heading,
-.section__slogan {
-    text-align: center;
-}
-
-.section__slogan {
-    font-size: 15px;
-    margin-top: 25px;
-    font-style: italic;
-    line-height: 1.4;
-    opacity: 0.6;
-}
+/* Band */
 
 .band-content {
     font-size: 15px;
@@ -191,14 +216,10 @@ a.nav-item__logo {
 }
 
 .band-member__list {
-    display: flex;
     text-align: center;
     color: #777;
 }
-.band-member__item {
-    padding: 0 15px;
-    width: 33.33%;
-}
+
 .band-member__name {
     font-size: 15px;
     font-weight: 700;
@@ -217,6 +238,8 @@ a.nav-item__logo {
     cursor: pointer;
 }
 
+/* tour  */
+
 #tour {
     background-color: var(--primary-color);
     color: #bdbdbd;
@@ -224,6 +247,10 @@ a.nav-item__logo {
 
 .tour__heading {
     color: var(--white-color);
+}
+
+.tour__slogan {
+    color: #bdbdbd;
 }
 
 .tour-booking__list {
@@ -259,14 +286,172 @@ a.nav-item__logo {
     margin-left: auto;
 }
 
-#contact {
-
+.tour-places__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-#more {
+.tour-places__body {
+    width: 100%;
+    background-color: var(--white-color);
+    color: #555;
+    text-align: center;
+    padding-bottom: 15px;
+}
 
+.tour-places__heading,
+.tour-places__date {
+    padding: 15px 0 10px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.tour-places__heading {
+    font-weight: 700;
+}
+
+.tour-places__date {
+    font-weight: 300;
+}
+
+/* row  */
+
+.row {
+    margin: 0 -15px;
+    display: flex;
+}
+
+.col {
+    padding: 0 15px;
+}
+
+.col-1-of-3 {
+    width: 33.33%;
+}
+
+.col-2-of-3 {
+    width: 66.67%;
+}
+
+.col-1-of-2 {
+    width: 50%;
+}
+
+.col-1-of-1 {
+    width: 100%;
+}
+
+/* contact  */
+
+.contact__heading {
+    color: #111;
+}
+
+.contact-info {
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.contact-info__icon {
+    margin-right: 5px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: var(--white-color);
+    color: #555;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+}
+
+textarea.form-control {
+    height: auto;
+    font-family: inherit;
+    resize: none;
+}
+
+input[type="submit"] {
+    float: right;
+    margin-bottom: 15px;
+}
+
+.contact-tab {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact-tab__item {
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: -1px;
+}
+
+.contact-tab__item a {
+    display: block;
+    font-size: 15px;
+    color: #777;
+}
+
+.contact-tab__item--active {
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    background-color: #fff;
+}
+
+.contact-tab__item--active a {
+    color: #555;
+    cursor: default !important;
+}
+
+.contact-content {
+    color: #777;
+}
+
+.contact-content__heading {
+    margin: 20px 0 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.contact-content__message {
+    font-size: 15px;
+}
+
+.more__img {
+    width: 100%;
+    display: block;
 }
 
 .footer {
+    background-color: #2d2d30;
+    text-align: center;
+    padding: 32px;
+    color: #f5f5f5;
+}
 
+.footer-btn {
+    color: #f5f5f5;
+}
+
+.footer-link a {
+    color: #f5f5f5;
+}
+
+.footer-link a:hover {
+    color: #777;
 }

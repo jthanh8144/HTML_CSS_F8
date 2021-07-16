@@ -71,16 +71,16 @@
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
                     commodo consequat.
                 </p>
-                <ul class="band-member__list">
-                    <li class="band-member__item">
+                <ul class="row band-member__list">
+                    <li class="col col-1-of-3 band-member__item">
                         <p class="band-member__name">Name</p>
                         <img src="./assets/img/member.jpg" alt="Member" class="band-member__img">
                     </li>
-                    <li class="band-member__item">
+                    <li class="col col-1-of-3 band-member__item">
                         <p class="band-member__name">Name</p>
                         <img src="./assets/img/member.jpg" alt="Member" class="band-member__img">
                     </li>
-                    <li class="band-member__item">
+                    <li class="col col-1-of-3 band-member__item">
                         <p class="band-member__name">Name</p>
                         <img src="./assets/img/member.jpg" alt="Member" class="band-member__img">
                     </li>
@@ -91,7 +91,7 @@
         <section id="tour">
             <div class="content-section">
                 <h2 class="section__heading tour__heading">TOUR DATES</h2>
-                <p class="section__slogan">
+                <p class="section__slogan tour__slogan">
                     Lorem ipsum we'll play you some music. <br> Remember to book your tickets!
                 </p>
                 <ul class="tour-booking__list">
@@ -108,20 +108,107 @@
                         <p class="tour-booking--count">3</p>
                     </li>
                 </ul>
+                <ul class="row tour-places__list">
+                    <li class="col col-1-of-3 tour-places__item">
+                        <img src="./assets/img/paris.jpg" alt="Paris" class="tour-places__img">
+                        <div class="tour-places__body">
+                            <h3 class="tour-places__heading">Paris</h3>
+                            <p class="tour-places__date">Friday 27 November 2015</p>
+                            <button class="btn">Buy Tickets</button>
+                        </div>
+                    </li>
+                    <li class="col col-1-of-3 tour-places__item">
+                        <img src="./assets/img/newyork.jpg" alt="New York" class="tour-places__img">
+                        <div class="tour-places__body">
+                            <h3 class="tour-places__heading">New York</h3>
+                            <p class="tour-places__date">Saturday 28 November 2015</p>
+                            <button class="btn">Buy Tickets</button>
+                        </div>
+                    </li>
+                    <li class="col col-1-of-3 tour-places__item">
+                        <img src="./assets/img/sanfran.jpg" alt="San Francisco" class="tour-places__img">
+                        <div class="tour-places__body">
+                            <h3 class="tour-places__heading">San Francisco</h3>
+                            <p class="tour-places__date">Sunday 29 November 2015</p>
+                            <button class="btn">Buy Tickets</button>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section id="contact">
-
+            <div class="content-section">
+                <h2 class="section__heading contact__heading">Contact</h2>
+                <p class="section__slogan">We love our fans!</p>
+                <div class="row">
+                    <div class="col col-1-of-3">
+                        <p class="contact-info">Fan? Drop a note.</p>
+                        <p class="contact-info">
+                            <i class="contact-info__icon fas fa-map-marker-alt"></i>
+                            Chicago, US
+                        </p>
+                        <p class="contact-info">
+                            <i class="contact-info__icon fas fa-mobile-alt"></i>
+                            Phone: +00 1515151515
+                        </p>
+                        <p class="contact-info">
+                            <i class="contact-info__icon far fa-envelope"></i>
+                            Email: mail@mail.com
+                        </p>
+                    </div>
+                    <div class="col col-2-of-3">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-1-of-2">
+                                    <input type="text" name="" id="" placeholder="Name" class="form-control">
+                                </div>
+                                <div class="col col-1-of-2">
+                                    <input type="email" name="" id="" placeholder="Email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-1-of-1">
+                                    <textarea rows="6" type="text" name="" id="" placeholder="Comment" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <input type="submit" value="Send" class="btn">
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h2 class="section__heading contact__heading">From The Blog</h2>
+                <ul class="contact-tab">
+                    <li class="contact-tab__item contact-tab__item--active">
+                        <a href="">Mike</a>
+                    </li>
+                    <li class="contact-tab__item">
+                        <a href="">Chandler</a>
+                    </li>
+                    <li class="contact-tab__item">
+                        <a href="">Peter</a>
+                    </li>
+                </ul>
+                <div class="contact-content">
+                    <h4 class="contact-content__heading">Mike Ross, Manager</h4>
+                    <p class="contact-content__message">Man, we've been on the road for some time now. Looking forward to lorem ipsum.</p>
+                </div>
+            </div>
         </section>
 
         <section class="more">
-
+            <img src="./assets/img/map.jpg" alt="Map" class="more__img">
         </section>
     </main>
 
     <footer class="footer">
-        
+        <a href="#home" class="footer-btn"><i class="fas fa-angle-up"></i></a>
+        <br>
+        <br>
+        <p class="footer-link">
+            Made by 
+            <a href="fb.com/jThanh8144">jThanh8144</a>
+        </p>
     </footer>
 
     <script src="./assets/js/main.js"></script>
