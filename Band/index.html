@@ -114,7 +114,7 @@
                         <div class="tour-places__body">
                             <h3 class="tour-places__heading">Paris</h3>
                             <p class="tour-places__date">Friday 27 November 2015</p>
-                            <button class="btn">Buy Tickets</button>
+                            <button class="btn tour-places__buy">Buy Tickets</button>
                         </div>
                     </li>
                     <li class="col col-1-of-3 tour-places__item">
@@ -122,7 +122,7 @@
                         <div class="tour-places__body">
                             <h3 class="tour-places__heading">New York</h3>
                             <p class="tour-places__date">Saturday 28 November 2015</p>
-                            <button class="btn">Buy Tickets</button>
+                            <button class="btn tour-places__buy">Buy Tickets</button>
                         </div>
                     </li>
                     <li class="col col-1-of-3 tour-places__item">
@@ -130,7 +130,7 @@
                         <div class="tour-places__body">
                             <h3 class="tour-places__heading">San Francisco</h3>
                             <p class="tour-places__date">Sunday 29 November 2015</p>
-                            <button class="btn">Buy Tickets</button>
+                            <button class="btn tour-places__buy">Buy Tickets</button>
                         </div>
                     </li>
                 </ul>
@@ -211,6 +211,52 @@
         </p>
     </footer>
 
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-btn-close">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="modal-header">
+                <i class="fas fa-briefcase"></i>
+                <h4>Tickets</h4>
+            </div>
+
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="" class="form-label">
+                        <i class="fas fa-shopping-cart"></i>
+                        Tickets, $23 per person
+                    </label>
+                    <input type="text" name="" id="" placeholder="How many?" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="form-label">
+                        <i class="fas fa-user"></i>
+                        Send To
+                    </label>
+                    <input type="text" name="" id="" placeholder="How many?" class="form-control">
+                </div>
+
+                <button class="buy-tickets btn">
+                    Pay
+                    <i class="modal-icon fas fa-check"></i>
+                </button>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn modal-cancel">
+                    <i class="modal-icon fas fa-times"></i>
+                    Cancel
+                </button>
+                <p class="modal-help">
+                    Need
+                    <a href="" class="modal-link">help?</a>
+                </p>
+            </div>
+        </div>
+    </div>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

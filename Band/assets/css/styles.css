@@ -455,3 +455,102 @@ input[type="submit"] {
 .footer-link a:hover {
     color: #777;
 }
+
+/* modal  */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-container {
+    width: 600px;
+    min-height: 450px;
+    background-color: var(--white-color);
+    position: relative;
+}
+
+.modal-btn-close {
+    position: absolute;
+    font-size: 30px;
+    color: var(--white-color);
+    opacity: 0.2;
+    right: 50px;
+    top: 40px;
+}
+
+.modal-btn-close:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    padding: 40px 50px;
+    font-size: 30px;
+    color: var(--white-color);
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.modal-header h4 {
+    margin: 10px 0 30px;
+    display: inline-block;
+}
+
+.modal-body {
+    padding: 40px 50px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-size: 15px;
+    color: #bdbdbd;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.buy-tickets {
+    width: 100%;
+}
+
+.modal-icon {
+    margin: 0 5px;
+}
+
+.modal-footer {
+    padding: 15px;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-help {
+    font-size: 15px;
+    color: #bdbdbd;
+    font-style: italic;
+}
+
+.modal-link {
+    color: #337ab7;
+}
+
+.modal-link:hover {
+    text-decoration: underline;
+    color: #23527c;
+}
