@@ -479,6 +479,7 @@ input[type="submit"] {
     min-height: 450px;
     background-color: var(--white-color);
     position: relative;
+    animation: modalFadeIn ease .4s;
 }
 
 .modal-btn-close {
@@ -553,4 +554,15 @@ input[type="submit"] {
 .modal-link:hover {
     text-decoration: underline;
     color: #23527c;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

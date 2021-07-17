@@ -13,3 +13,7 @@ function removeClass() {
 
 document.querySelector('.modal-btn-close').onclick = removeClass;
 document.querySelector(".modal-cancel").onclick = removeClass;
+modal.onclick = removeClass;
+document.querySelector(".modal-container").onclick = (e) => {
+    e.stopPropagation();
+}
