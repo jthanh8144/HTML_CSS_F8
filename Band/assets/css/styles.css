@@ -95,7 +95,6 @@ ul {
     left: 0;
     right: 0;
     z-index: 1;
-    overflow: hidden;
 }
 
 .nav {
@@ -183,7 +182,7 @@ a.nav-item__logo {
     padding: 9px 10px;
     margin: 5px 15px 5px 0;
     z-index: 2;
-    /* display: none; */
+    display: none;
 }
 
 .mobile-menu__btn:hover,

@@ -20,6 +20,10 @@
 
 /* mobile */
 @media (max-width: 739px) {
+    .header {
+        overflow: hidden;
+    }
+
     .nav {
         display: block;
     }
@@ -31,5 +35,22 @@
 
     .mobile-menu__btn {
         display: block;
+    }
+
+    .subnav--active {
+        display: block !important;
+    }
+
+    .subnav--hidden {
+        display: none !important;
+    }
+
+    .subnav {
+        position: initial;
+        background-color: rgba(45, 45, 48, 0.9);
+    }
+
+    .subnav-item__link {
+        color: #d5d5d5;
     }
 }
