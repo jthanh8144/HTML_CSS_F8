@@ -1,0 +1,35 @@
+/* Pc */
+@media (min-width: 1024px) {
+
+}
+
+/* Tablet */
+@media (max-width: 1023px) and (min-width: 740px) {
+    .content-section {
+        width: 100%;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .r-row {
+        flex-direction: column;
+    }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .nav {
+        display: block;
+    }
+
+    .nav-item:first-child {
+        margin: 0;
+        width: fit-content;
+    }
+
+    .mobile-menu__btn {
+        display: block;
+    }
+}
