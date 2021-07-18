@@ -566,3 +566,21 @@ input[type="submit"] {
         transform: translateY(0);
     }
 }
+
+@media (max-width: 1023px) and (min-width: 740px) {
+    .content-section {
+        width: 100%;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .r-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 739px) {
+    
+}
