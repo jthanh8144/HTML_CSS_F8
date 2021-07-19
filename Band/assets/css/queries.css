@@ -53,4 +53,37 @@
     .subnav-item__link {
         color: #d5d5d5;
     }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .content-section {
+        padding: 40px 0;
+    }
+
+    .band-member__item {
+        margin-bottom: 20px;
+    }
+
+    .band-member__name {
+        margin-bottom: calc(10% - 15px);
+    }
+
+    .tour-places__item {
+        margin-bottom: 30px;
+    }
+
+    .contact-body,
+    .contact-form {
+        margin-bottom: 30px;
+    }
+
+    .contact-tab {
+        margin-top: 30px;
+    }
 }
