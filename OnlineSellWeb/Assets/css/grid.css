@@ -1,0 +1,46 @@
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -4px;
+}
+
+/* pc low resolution */
+@media only screen and (max-width: 1239px) and (min-width: 1024px) {
+    .wide {
+        width: 984px;
+    }
+
+    .wide .row {
+        margin: 0 -12px;
+    }
+}
+
+@media only screen and (min-width: 1113px) {
+    .row {
+        margin: 0 -12px;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width: 1023px) and (min-width: 740px) {
+    .wide {
+        width: 644px;
+    }
+}
+
+@media only screen and (min-width: 740px) {
+    .row {
+        margin: 0 -8px;
+    }
+}
