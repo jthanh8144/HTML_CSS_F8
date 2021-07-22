@@ -429,7 +429,7 @@
 }
 
 .search {
-    height: calc(var(--header-height) - var(--navbar-height) -12px);
+    height: calc(var(--header-height) - var(--navbar-height) - 12px);
     display: flex;
     align-items: center;
     margin: 0 10px;
