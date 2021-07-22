@@ -38,8 +38,12 @@
         display: none;
     }
     
+    .sort-bar {
+        display: flex;
+    }
+    
     .app__container {
-        margin-top: var(--header-height);
+        margin-top: calc(var(--header-height) + var(--sort-bar-height));
     }
 }
 
