@@ -19,11 +19,6 @@
 }
 
 @media only screen and (max-width: 1023px) {
-    :root {
-        --header-height: 68px;
-        --navbar-height: 0px;
-    }
-
     .hide-on-mobile-tablet {
         display: none;
     }
@@ -77,6 +72,11 @@
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 740px) {
+    :root {
+        --header-height: 68px;
+        --navbar-height: 0px;
+    }
+
     .hide-on-tablet {
         display: none;
     }
@@ -88,6 +88,11 @@
 }
 
 @media only screen and (max-width: 739px) {
+    :root {
+        --header-height: 58px;
+        --navbar-height: 0px;
+    }
+
     .hide-on-mobile {
         display: none;
     }
@@ -152,5 +157,14 @@
 
     .footer__content {
         padding: 0 16px;
+    }
+
+    .footer__heading {
+        text-align: center;
+    }
+
+    .footer-item__link,
+    .footer-download {
+        justify-content: center;
     }
 }
